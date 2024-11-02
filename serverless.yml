@@ -22,7 +22,7 @@ functions:
             - suffix: .csv
       - s3:
           bucket: stephen-ce7-s3-bucket
-          event: s3:ObjectRemoved:*
+          event: s3:ObjectCreated:Post
           rules:
             - suffix: .csv
     environment:
